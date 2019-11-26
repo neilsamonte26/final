@@ -21,7 +21,7 @@ export class LoginPageComponent implements OnInit {
   doLogin(user,pass){
     this.userService.login(user,pass).subscribe((data)=>{
       if(data.length!=0){
-        this.router.navigate(['/transaction'])
+        this.router.navigate(['/transaction']);
       }
       else{
         alert("Invalid");
